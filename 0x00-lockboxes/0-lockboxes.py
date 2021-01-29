@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def canUnlockAll(boxes):
     ''' Function to unlock boxes '''
     lenBoxes = len(boxes)
