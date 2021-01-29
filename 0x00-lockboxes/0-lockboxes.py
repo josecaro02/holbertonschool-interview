@@ -16,6 +16,8 @@ def canUnlockAll(boxes):
     while posBox < lenBoxes:
         if posBox in keys:
             for key in boxes[posBox]:
+                if key >= lenBoxes:
+                    continue
                 keys.append(key)
                 if openedBoxes[key] == 0 and key < posBox:
                     openedBoxes[key] = 1
