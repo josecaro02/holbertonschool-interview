@@ -5,11 +5,15 @@
 def canUnlockAll(boxes):
     ''' Function to unlock boxes '''
     lenBoxes = len(boxes)
+    if lenBoxes == 0:
+        return false
     openedBoxes = [1]
     keys = []
     for i in range(1, lenBoxes):
         openedBoxes.append(0)
     for box in boxes[0]:
+        if box >= lenBoxes:
+            continue
         keys.append(box)
         openedBoxes[box] = 1
     posBox = 1
