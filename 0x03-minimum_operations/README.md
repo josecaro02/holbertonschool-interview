@@ -1,0 +1,1 @@
+#README minimum operatos projects
