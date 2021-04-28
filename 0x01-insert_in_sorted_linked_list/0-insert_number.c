@@ -28,7 +28,6 @@ listint_t *insert_node(listint_t **head, int number)
 		current = current->next;
 
 
-	printf("Numero actuel %d\n", current->n);
 	if (current == NULL)
 	{
 		new->next = NULL;
