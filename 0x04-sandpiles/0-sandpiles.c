@@ -105,8 +105,6 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 			grid1[i][j] = grid1[i][j] + grid2[i][j];
 		}
 	}
-	printf("=\n");
-	print_grid(grid1);
 	while (stableCheck(grid1) != 1)
 	{
 		printf("=\n");
