@@ -27,12 +27,13 @@ int is_palindrome(listint_t **head)
 	tail = *head;
 	for (i = 0; i < n_nodes / 2; i++)
 	{
-		for (j = 0; j < n_nodes - i - 1; j++)
+		for (j = i; j < n_nodes - (2 * i) - 1; j++)
 			tail = tail->next;
 		if (current->n != tail->n)
 			return (0);
+		printf("sali");
 		current = current->next;
-		tail = *head;
+		tail = current;
 	}
 
 	return (1);
