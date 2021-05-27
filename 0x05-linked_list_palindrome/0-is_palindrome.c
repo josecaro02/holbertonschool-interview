@@ -31,7 +31,6 @@ int is_palindrome(listint_t **head)
 			tail = tail->next;
 		if (current->n != tail->n)
 			return (0);
-		printf("sali");
 		current = current->next;
 		tail = current;
 	}
