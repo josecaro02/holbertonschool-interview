@@ -20,6 +20,9 @@ try:
         splitLine = line.split()
         try:
             fileSize += int(splitLine[8])
+        except:
+            pass
+        try:
             if splitLine[7] in status:
                 status[splitLine[7]] += 1
         except:
