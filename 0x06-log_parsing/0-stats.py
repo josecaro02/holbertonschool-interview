@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+''' print stats program '''
 import sys
 
 status = {
