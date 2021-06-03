@@ -18,9 +18,9 @@ fileSize = 0
 try:
     for line in sys.stdin:
         splitLine = line.split()
-        fileSize += int(splitLine[-1])
-        if splitLine[-2] in status:
-            status[splitLine[-2]] += 1
+        fileSize += int(splitLine[8])
+        if splitLine[7] in status:
+            status[splitLine[7]] += 1
         count += 1
         if count == 10:
             print("File size: {}".format(fileSize))
@@ -29,9 +29,6 @@ try:
                     print("{}: {}".format(key, value))
             count = 0
     print("File size: {}".format(fileSize))
-    for key, value in status.items():
-        if status[key] != 0:
-            print("{}: {}".format(key, value))
 except KeyboardInterrupt:
     print("File size: {}".format(fileSize))
     for key, value in status.items():
