@@ -23,18 +23,18 @@ try:
             status[splitLine[7]] += 1
         count += 1
         if count == 10:
-            print("File size: {:d}".format(fileSize))
-            for key, value in status.items():
+            print("File size: {}".format(fileSize))
+            for key, value in sorted(status.items()):
                 if status[key] != 0:
-                    print("{}: {:d}".format(key, value))
+                    print("{}: {}".format(key, value))
             count = 0
-    print("File size: {:d}".format(fileSize))
-    for key, value in status.items():
+    print("File size: {}".format(fileSize))
+    for key, value in sorted(status.items()):
         if status[key] != 0:
-            print("{}: {:d}".format(key, value))
+            print("{}: {}".format(key, value))
 except KeyboardInterrupt:
-    print("File size: {:d}".format(fileSize))
-    for key, value in status.items():
+    print("File size: {}".format(fileSize))
+    for key, value in sorted(status.items()):
         if status[key] != 0:
-            print("{}: {:d}".format(key, value))
+            print("{}: {}".format(key, value))
     raise
