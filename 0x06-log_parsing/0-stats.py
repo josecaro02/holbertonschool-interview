@@ -27,6 +27,11 @@ try:
                 if status[key] != 0:
                     print("{}: {}".format(key, value))
             count = 0
+    print("File size: {}".format(fileSize))
+    for key, value in status.items():
+        if status[key] != 0:
+            print("{}: {}".format(key, value))
+            
 except KeyboardInterrupt:
     print("File size: {}".format(fileSize))
     for key, value in status.items():
