@@ -18,15 +18,9 @@ fileSize = 0
 try:
     for line in sys.stdin:
         splitLine = line.split()
-        try:
-            fileSize += int(splitLine[8])
-        except:
-            pass
-        try:
-            if splitLine[7] in status:
-                status[splitLine[7]] += 1
-        except:
-            pass
+        fileSize += int(splitLine[8])
+        if splitLine[7] in status:
+            status[splitLine[7]] += 1
         count += 1
         if count == 10:
             print("File size: {}".format(fileSize))
