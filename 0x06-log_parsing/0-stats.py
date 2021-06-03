@@ -20,7 +20,8 @@ try:
         splitLine = line.split()
         try:
             fileSize += int(splitLine[8])
-            status[splitLine[7]] += 1
+            if splitLine[7] in status:
+                status[splitLine[7]] += 1
         except:
             pass
         count += 1
