@@ -32,3 +32,4 @@ except KeyboardInterrupt:
     for key, value in status.items():
         if status[key] != 0:
             print("{}: {}".format(key, value))
+    raise
