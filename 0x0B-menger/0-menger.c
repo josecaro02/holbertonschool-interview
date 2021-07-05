@@ -17,7 +17,7 @@ void menger(int level)
 
 	for (i = 0, limit = pow(3, level); i < limit; i++)
 	{
-		for (j = 0; j < limit; j++ )
+		for (j = 0; j < limit; j++)
 		{
 			check = 1;
 			h = i;
