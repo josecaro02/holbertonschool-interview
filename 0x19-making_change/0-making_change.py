@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+''' 0-making change file for project'''
+
 
 def makeChange(coins, total):
+    ''' makeChange function - return fewest
+     number of coins needed to meet total'''
     if total <= 0:
         return 0
 
